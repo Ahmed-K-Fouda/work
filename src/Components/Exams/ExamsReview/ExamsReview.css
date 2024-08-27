@@ -1,0 +1,237 @@
+.exam__review__container {
+    width: 100%;
+    background-image: url('../../../../src/images/secondary_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.exam__review {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 20;
+    color: #fff;
+}
+
+.top__page {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+}
+
+.top__page p:first-of-type {
+    position: relative;
+}
+
+.exam__review__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.exam__review__header .left__header {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.exam__review__header .left__header sm {
+    font-size: 13px;
+}
+
+.exam__review__header .right__header svg {
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.exam__review__header .right__header {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+}
+
+.exam__review__header .right__header .right__header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right__header .right__header__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.right__header .right__header__data p {
+    font-size: 13px;
+}
+
+.exam__review .exam__time {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.exam__review .exam__time .time {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exam__review .exam__time .line input {
+    width: 100%;
+    height: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+    background: linear-gradient(to right,
+            var(--main-color) 0%,
+            var(--main-color) 97%,
+            gray 97%,
+            gray 100%);
+    border-radius: 5px;
+}
+
+.exam__review .exam__time .line input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.exam__review .exam__time .line input[type="range"]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
+
+.exam__review .exam__time .line input[type="range"]::-ms-thumb {
+    width: 0;
+    height: 0;
+}
+
+.exam__review .question>p {
+    margin-top: 50px;
+}
+
+.exam__review .question {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+    margin-top: 35px;
+}
+
+.exam__review .question h4 {
+    margin-top: 5px;
+}
+
+.question .question__option {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.question .question__option p {
+    background: rgb(83, 81, 81);
+    padding: 5px 10px;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.question .question__degree {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+
+}
+
+.question .question__img {
+    margin-top: 15px;
+    width: 500px;
+    height: 300px;
+}
+
+.question .question__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.question__action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.question__action button {
+    outline: none;
+    border: none;
+    padding: 10px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question__action .submit {
+    background: var(--main-color);
+}
+
+.question__action .cancel {
+    background: darkgray;
+}
+
+
+@media (max-width:800px) {
+    .exam__review .exam__review__header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .exam__review__header .right__header {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .question .question__img {
+        width: 350px;
+        height: 150px;
+    }
+}
+
+@media (max-width:512px) {
+    .exam__review .question {
+        text-align: center;
+    }
+
+    .question .question__option {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

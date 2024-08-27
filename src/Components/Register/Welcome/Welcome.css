@@ -1,0 +1,40 @@
+.top__page {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+}
+
+.top__page p:first-of-type {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.top__page p:first-of-type::after {
+    position: absolute;
+    content: '';
+    width: 5rem;
+    height: 100%;
+    left: 0;
+    top: 5px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.welcome {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.welcome .name {
+    color: var(--main-color);
+}
+
+@media(max-width:648px) {
+    .welcome {
+        flex-direction: column;
+    }
+
+
+}

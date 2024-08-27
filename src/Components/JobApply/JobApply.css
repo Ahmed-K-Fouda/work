@@ -1,0 +1,152 @@
+.job__apply__container {
+    width: 100%;
+    background-image: url('../../../src/images/secondary_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.job__apply {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 20;
+}
+
+.top__page {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+}
+
+.top__page p:first-of-type {
+    position: relative;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.user__info {
+    display: flex;
+    color: #fff;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.user__info .user__email, .user__info .user__exp, .user__info .user__mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user__info input {
+    background: rgba(92, 92, 92, 0.8);
+    border: none;
+    outline: none;
+    padding: 0.3rem 2rem;
+    color: #fff;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+
+.user__info .user__email {
+    flex-basis: 60%;
+}
+
+.user__info .user__exp {
+    flex-basis: 30%;
+}
+
+.user__info .user__mobile {
+    flex-basis: 60%;
+    margin-top: 1rem;
+}
+
+.user__info label {
+    filter: brightness(0.8);
+}
+
+
+.upload-container {
+    max-width: 400px;
+    height: 150px;
+    border: 2px dashed var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.upload-icon {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    margin: 0;
+    font-size: 14px;
+}
+
+.browse-link {
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.browse-link:hover {
+    text-decoration: underline;
+}
+
+.supported-formats {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.upload__title {
+    display: flex;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+.btn__resume {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn__resume .cancel__btn {
+    background-color: #333;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: 500;
+}

@@ -1,0 +1,101 @@
+.job__main .job__filter {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem 3rem;
+    flex-basis: 30%;
+    height: fit-content;
+}
+
+.job__search__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job__search__input input {
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    background: rgba(149, 149, 149, 0.297);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.job__main .filter__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.job__main .filter__head span {
+    color: var(--main-color);
+}
+
+.job__main .filter__head p {
+    font-weight: bold;
+}
+
+.job__main .select__option p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.job__main .job__filter select {
+    padding: 5px 3rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgba(149, 149, 149, 0.297);
+    color: #fff;
+}
+
+.job__main .job__filter option {
+    background: darkgray;
+}
+
+.job__main .select__option {
+    display: flex;
+    flex-direction: column;
+}
+
+.job__main .job__type {
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.job__main .job__type p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.job__main .job__type .job__label {
+    display: block;
+    filter: opacity(0.8);
+    font-size: 14px;
+}
+
+.job__main .job__type .job__label label {
+    margin-left: 0.5rem;
+}
+
+.job__main .job__type .job__label input {
+    outline: none;
+    border: none;
+    accent-color: var(--main-color);
+    width: 20px;
+    height: 15px;
+}
+
+.job__main .job__filter button {
+    margin-top: 2rem;
+}
+
+
+@media(max-width:990px) {
+    .job__main .job__filter {
+        width: fit-content;
+    }
+}

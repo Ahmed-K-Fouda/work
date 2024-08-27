@@ -1,0 +1,80 @@
+.profile__container {
+    width: 100%;
+    background-image: url('../../../src/images/secondary_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 20;
+}
+
+
+
+.top__page {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+}
+
+.top__page p:first-of-type {
+    position: relative;
+    /* margin-bottom: 15px; */
+}
+
+.top__page p:first-of-type::after {
+    position: absolute;
+    content: '';
+    width: 5rem;
+    height: 100%;
+    left: 0;
+    top: 5px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.edit__profile {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px 30px;
+}
+
+.edit__profile .profile__img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.edit__profile .profile__details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.edit__profile .profile__info p {
+    font-size: 14px;
+    color: darkgray;
+}
+

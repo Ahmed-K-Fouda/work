@@ -1,0 +1,19 @@
+.personal__info input {
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin: 5px 0;
+
+}
+
+.top__page p:first-child {
+    margin-top: 25px;
+
+}
+
+@media(max-width:418px) {
+    .personal__info {
+        flex-direction: column;
+    }
+}

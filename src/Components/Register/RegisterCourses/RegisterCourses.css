@@ -1,0 +1,145 @@
+.register__courses__container {
+    width: 100%;
+    background-image: url('../../../../src/images/secondary_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.register {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 20;
+}
+
+.register .level .level__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register .level .level__line input {
+    width: 100%;
+    height: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+    background: linear-gradient(to right,
+            var(--main-color) 0%,
+            var(--main-color) 97%,
+            gray 97%,
+            gray 100%);
+    border-radius: 5px;
+}
+
+.level__line input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.level__line input[type="range"]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
+
+.register .level__line input[type="range"]::-ms-thumb {
+    width: 0;
+    height: 0;
+}
+
+.register .check {
+    display: flex;
+    margin: 20px 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    background: #8080804d;
+    width: 40%;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.register .check span {
+    position: relative;
+    padding: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.register .check span::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--main-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.register .rating {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.register .rating span {
+    color: var(--main-color);
+    font-size: 28px;
+}
+
+.earn {
+    margin-top: 15rem;
+}
+
+.certificate {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px;
+}
+
+.certificate .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate .details {
+    display: flex;
+    gap: 35px;
+}
+
+.certificate .details span {
+    color: var(--main-color);
+}
+
+/* Add Media Query */
+
+@media(max-width:648px) {
+    .check, .register .check {
+        width: 100%;
+    }
+
+    .register .rating {
+        width: 100%;
+        font-size: 18px;
+    }
+}

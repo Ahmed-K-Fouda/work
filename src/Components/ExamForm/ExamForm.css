@@ -1,0 +1,251 @@
+.exam__form__container {
+    width: 100%;
+    background-image: url('../../../src/images/secondary_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.exam-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 20;
+    color: #fff;
+}
+
+.top__page {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+}
+
+.top__page p:first-of-type {
+    position: relative;
+    /* margin-bottom: 15px; */
+}
+
+.exam-form .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.top__page p:first-of-type::after {
+    position: absolute;
+    content: '';
+    width: 5rem;
+    height: 100%;
+    left: 0;
+    top: 5px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+.exam-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.exam-info input {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 1px solid #444;
+    padding: 10px;
+    width: 30%;
+    margin: 5px 10px;
+}
+
+.questions {
+    margin-top: 20px;
+}
+
+.question-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px dashed var(--main-color);
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.question-header input {
+    background-color: rgb(40, 39, 40);
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 48%;
+}
+
+input:focus {
+    outline: 1px solid var(--main-color);
+}
+
+.question-content {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.question-content select,
+.question-content input,
+.question-content textarea {
+    background-color: rgb(40, 39, 40);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.question-content select {
+    width: 50%;
+}
+
+.question-content input[type='file'] {
+    width: 40%;
+}
+
+input[type=file]::file-selector-button {
+    border: 2px solid var(--main-color);
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: var(--main-color);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 75%;
+}
+
+.option input {
+    width: 100%;
+}
+
+.exam-info .exam__input {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.exam-info .exam__data {
+    display: flex;
+}
+
+.exam-info .exam__text input:first-child {
+    width: 50%;
+}
+
+.question-header input:first-child {
+    width: 60%;
+}
+
+.correct {
+    background-color: rgba(4, 73, 4, 0.737);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 23vw;
+    margin-bottom: 0.7rem;
+}
+
+.wrong {
+    background-color: rgba(255, 0, 0, 0.43);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 23vw;
+    margin-bottom: 0.5rem;
+}
+
+.add-question {
+    margin-top: 10px;
+    background-color: var(--main-color);
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.actions .cancel,
+.actions .save {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions .cancel {
+    background-color: gray;
+    color: white;
+}
+
+.actions .save {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions .btn__actions {
+    gap: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width: 718px) {
+    .option {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 518px) {
+    .correct, .wrong {
+        width: auto;
+    }
+
+    .exam-info .exam__text input:first-child {
+        width: 100%;
+    }
+
+    .question-header input:first-child, .question-content input[type='file'], .question-header input, .question-content select, .option, .exam-info input, .exam__data input {
+        width: 100%;
+    }
+
+    .exam__data, .question-header {
+        flex-direction: column;
+    }
+}

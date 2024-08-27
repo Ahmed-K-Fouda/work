@@ -1,0 +1,134 @@
+.personal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal .personal__details {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.personal .personal__details .header {
+    margin: 30px 0;
+}
+
+.personal .personal__details .personal__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    padding: 4px;
+}
+
+.personal .personal__details .personal__info h5 {
+    color: #f2f2f2e6;
+}
+
+.personal .personal__details .personal__info span {
+    color: rgb(205, 201, 201);
+}
+
+.personal .education__info {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+}
+
+.personal .contact__info {
+    gap: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact__info .mail {
+    display: flex;
+    flex-direction: column;
+    width: 100;
+}
+
+.contact__info .phone {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.about .about__head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+}
+
+.about .about__head h4 {
+    font-size: 20px;
+}
+
+.about .about__head p {
+    font-size: 16px;
+}
+
+.in__progress {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.in__progress .in__progress__head {
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.in__progress .subject {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+}
+
+.in__progress .in__progress__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.in__progress .in__progress__info .name {
+    color: #fff;
+}
+
+.in__progress .in__progress__info .instructor {
+    color: var(--main-color);
+}
+
+.in__progress .in__progress__subject__two {
+
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+}
+
+@media(max-width:712px) {
+    .personal {
+        flex-direction: column;
+    }
+
+    .edit__profile {
+        flex-direction: column;
+    }
+}

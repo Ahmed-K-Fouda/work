@@ -1,0 +1,76 @@
+.upcoming__courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.upcoming__courses .exams__parent {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.exams__img {
+    position: relative;
+}
+
+.exams__img .over__img {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.exams__img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.exams__img .over__img p {
+    color: black;
+}
+
+.exams__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 55px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.exams__info h5 {
+    margin: 0 5px;
+}
+
+.exams__info p {
+    font-size: 12px;
+}
+
+.exams__img .over__img p {
+    color: rgb(232, 230, 227);
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+}
+
+@media(max-width: 881px) {
+    .upcoming__courses {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 469px) {
+    .exams__info {
+        padding: 10px 15px;
+    }
+
+    .exams__img .over__img {
+        bottom: 12%;
+    }
+}
